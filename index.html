@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML5</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+  </head>
+  <!--*************************************************************************************-->
+  <body style="background: pink;">
+    <section class="section" id="header">
+      <!-- <h1 style="color: blueviolet;">This is a Header 1.</h1> -->
+      <h1>This is a Header 1</h1>
+      <h2>This is a Header 2</h2>
+      <h3>This is a Header 3</h3>
+      <h4>This is a Header 4</h4>
+      <h5>This is a Header 5</h5>
+      <h6>This is a Header 6</h6>
+    </section>
+    <!--*************************************************************************************-->
+    <section class="section" id="paragrahp">
+      <p>
+        This is paragrahp
+      </p>
+    </section>
+    <!--*************************************************************************************-->
+    <section class="section" id="formatting">
+      <p>This is a <strong>Bold</strong></p>
+      <p>This is a <em>Bold</em></p>
+      <p>This is a <mark>Mark</mark></p>
+      <p><mark>This is a Mark</mark></p>
+      <p>This is a <sub>Subscript</sub></p>
+      <p>This is a <del>Delete</del></p>
+    </section>
+    <!--*************************************************************************************-->
+    <section class="section" id="quotations">
+      <p>This is a <q>quotations</q></p>
+      <blockquote>This is a blockquote</blockquote>
+      <bdo dir="rtl">This is a bdo</bdo>
+      <p>This is a <abbr title="World Organization">WOR</abbr></p>
+    </section>
+    <!--*************************************************************************************-->
+    <section class="section" id="comment">
+      <p>This is a comment</p>
+      <!--   <p>This is a comment</p> -->
+    </section>
+    <!--*************************************************************************************-->
+    <section class="section" id="link">
+      <a href="https://www.google.com/">google</a><br />
+      <a href="https://www.google.com/" target="_blank">google target blank</a>
+      <a href="https://www.google.com/"><p>This is a paragrahp</p></a>
+    </section>
+    <!--*************************************************************************************-->
+    <section class="section" id="media">
+      <img src="image/Narawin.jpg" alt="Narawin" width="400" />
+      <img src="image/Narawin2.jpg" alt="Narawin" width="400" height="400" />
+      <audio src="audio/Naraphuwin.mp3"></audio>
+      <video src="audio/PW.mp4" width="400" <!--autoplay--> ></video>
+    </section>
+    <!--*************************************************************************************-->
+    <section class="section" id="table">
+      <table>
+        <caption>
+          Narawin
+        </caption>
+        <tr>
+          <th colspan="2" rowspan="1">Name</th>
+          <th>Date</th>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="1">Phuwin</td>
+          <td>5/7/2003</td>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="1">Pond</td>
+          <td>1/2/2001</td>
+        </tr>
+      </table>
+    </section>
+    <!--*************************************************************************************-->
+    <section class="section" id="list">
+      <ol>
+        <li>He name is Phuwin</li>
+        <li>He name is Naravit</li>
+        <li>They name is Narawin</li>
+      </ol>
+      <!--********************************-->
+      <ol type="A">
+        <li>He name is Phuwin</li>
+        <li>He name is Naravit</li>
+        <li>They name is Narawin</li>
+      </ol>
+      <!--********************************-->
+      <ol type="I">
+        <li>He name is Phuwin</li>
+        <li>He name is Naravit</li>
+        <li>They name is Narawin</li>
+      </ol>
+      <!--********************************-->
+      <ol>
+        <ul>
+          <li>He name is Phuwin</li>
+          <li>He name is Naravit</li>
+          <li>They name is Narawin</li>
+        </ul>
+      </ol>
+      <!--********************************-->
+      <ol>
+        <ul style="list-style-type: square;">
+          <li>He name is Phuwin</li>
+          <li>He name is Naravit</li>
+          <li>They name is Narawin</li>
+        </ul>
+      </ol>
+      <!--********************************-->
+      <dl>
+        <dt>A</dt>
+        <dd>He name is Phuwin</dd>
+        <dt>B</dt>
+        <dd>He name is Naravit</dd>
+        <dt>C</dt>
+        <dd>He name is Narawin</dd>
+      </dl>
+    </section>
+      <!--*************************************************************************************-->    
+    <section class="section" id="iframe">
+      <iframe
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/L3p2cAip1q8" ></iframe>
+      ></iframe>
+    </section>
+      <!--*************************************************************************************-->
+    <section class="section" id="script">
+      <!-- กำหนดscript -->
+      <p id="test-script">PondPhuwin</p>
+      <script>
+        function ranAlert(){
+        alert("This is a Script");
+        }
+       // document.getElementById('test-script').innerHTML = "PhuwinPond"
+      </script>
+      <script type="text/javascript" src="">
+      </script>
+      <!--หรือว่าจะ upload file มาก็ได้-->
+      <script type="text/javascript" src="" async defer>
+      // async,defer(ให้มันrun หลังโหลดเพจ) เป็น Attribute เฉพาะของ script
+      </script>
+      </section>
+      <!--*************************************************************************************-->
+      <section class="section" id="code">
+        <pre>
+          <code>
+            function(a,b)
+            {
+              return a+b;
+            }
+          </code>
+        </pre>
+        <!--********************************-->
+        <p>
+          function(a,b)
+            {
+              return a+b;
+            }
+        </p>
+        <!--********* x varible ***************-->
+        <p> <var>x</var> = 1+2 </p>
+        <!--********* X normal *************-->
+        <p> x = 1+2 </p>
+      </section>
+<!--*************************************************************************************-->
+      <section class="section" id="form">
+        <!-- < form action="" > จะต้องมีฝั่งของ server มารับว่าค่านี้จะถูกส่งไปทีไ่หน-->
+        <form >
+          Text : <input type="text"><br>
+          Fish on : <input type="Fish on" readonly value="Sky"><br>
+          Number : <input type="number"><br>
+          Password : <input name="password" type="password"><br>
+          Submit : <input type="submit"><br>
+          Textarea : <textarea name="" cols="30" rows="10"></textarea><br>
+          Select : <select name="" id="">
+                      <option value="A">Pond</option>
+                      <option value="B" selected>Phuwin</option>
+                      <option value="C">Narawin</option>
+                   </select><br>
+         Blue : <input type="radio" value="blue">
+         Red  : <input type="radio" value="Red">
+         <!-- checkbox(tick ได้หลายอัน) vs radio(เลือกอันใดอันหนึ่ง)-->
+         Green : <input type="checkbox"><br>
+         <input type="text" disabled>
+         <button onsubmit="" type="submit">Pond</button><br>
+         <input type="text" disabled>
+         <button onclick="" type="button">Phuwin</button>
+        </form>
+      </section>
+  </body>
+</html>

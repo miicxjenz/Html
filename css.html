@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- ถ้าไม่กำหนดตัว meta charset มันก็จะไม่รู้ charset อะไร ซึ่งโดยส่วนใหญ่ใช้ utf-8 -->
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/icon?family=Material+Icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis">
+    
+    </head>
+
+    <body style="background: rgb(233, 148, 200);">
+
+        <!-- /****************** selector ****************************/ -->
+
+        <h1 style="color: rgb(96, 28, 160);">CSS (style="color:")</h1>
+        <h1 class="import" style="color: brown;">CSS (class="import")</h1>
+        <h1 id="chapt">CSS (id="chapt")</h1>
+        <h1>CSS h1 { color: black; }</h1>
+        <!-- การเลือกลำดับอีกแบบ -->
+        <!-- > h1 คือลำดับชั้นต่อไปต้องเป็น h1 เท่านั้นถึงจะทำงาน -->
+        <!-- ให้ไปแสดงผลที่ class first ตามด้วย h1 เท่านั้น -->
+        <!-- ถ้าเกิดมีอะไรมาคั่น =  เราไม่ได้ select ที่อันนั้น -->
+        <div class="first">
+          <h1>CSS (.first > h1 {})</h1>
+        </div>
+        <!-- select ไปที่ div ที่มี class ชื่อว่า first -->
+        <!-- ใช้เว้นวรรคในการบอกว่า เราต้องการ select ไปอีกชั้นหนึ่ง -->
+        <!-- แบ่งโดยการเว้นวรรค มันเป็นการ select ที่ไม่มีลำดับขั้น -->
+        <!-- จึงสามารถสร้าง other div ก่อน h1 ได้ -->
+        <!-- จะทำงานที่ตัวสุดท้ายเสมอ -->
+        <div class="first">
+          <div>
+            <h1>CSS (.first h1 {})</h1>
+          </div>
+        </div>
+    
+        <div class="rgb">
+          <h1>CSS (.rgb h1{})</h1>
+        </div>
+    
+        <div class="hex">
+          <h1>CSS (.hex h1{})/h1>
+        </div>
+    
+        <div class="rgba">
+          <h1>CSS (.rgba h1{})</h1>
+        </div>
+    
+        
+        <!-- /****************** background ***********************/ -->
+        <!-- div is commal tag เป็น tag ที่ไม่มี style default มาให้-->
+        <div>
+            <div class="background_color width200"></div>
+            <div class="background_image width400"></div>
+        </div>
+
+
+        
+        <!-- /******************* Border ****************************/ -->
+        <div class="border width200"></div><br />
+
+        
+        <!--/****************** Margin *******************************/-->
+        <!-- Margin จะเพิ่มขอบนอกของ Elements นั้นๆ -->
+        <div class="margin width200"></div>
+
+        
+        <!--/********************* Padding **************************/-->
+        <!-- Padding จะขยับพื้นที่ข้างใน Elements นั้นๆ -->
+        <div class="padding width200"></div>
+    
+        
+        <!-- /***************** Width & Height *********************/ -->
+        <div class="width-height width400"></div>
+        <div class="mix-width"></div>
+
+        
+        <!-- /******************* outline ****************************/ -->
+
+        <div class="border width200"></div>
+        <!-- /* overlap is ทับ space ฝั่งอื่น */
+         /* border : ไม่ทับ Overlap */
+         /* outline : Overlap */ -->
+        <div class="outline width200"></div>
+
+        
+        <!-- /******************* text ****************************/ -->
+        <div class="text">
+            <p>This is Paragraph</p>
+            <p class="left">This is Paragraph</p>
+            <p class="right">This is Paragraph</p>
+            <p class="indent">
+              This is Paragraph This is Paragraph This is Paragraph This is Paragraph
+              This is Paragraph This is Paragraph This is Paragraph This is Paragraph
+              This is Paragraph
+            </p>
+        </div>
+
+        
+        <!-- /******************* font ********************************/ -->
+
+        <div class="font">
+            <p>Phuwin Pond</p>
+            <!-- <p> <strong>Phuwin Pond</strong></p> -->
+            <p>Phuwin Pond</p>
+            <p>Phuwin Pond</p>
+            <p>Phuwin Pond</p>
+            <p>Phuwin Pond</p>
+            <p>Phuwin Pond</p>
+            <p>Phuwin Pond</p>
+          </div>
+         
+        
+          <!-- /******************* icon ********************************/ -->
+
+        <div class="icon">
+            <i class="fa fa-arrow-alt-circle-up"></i>
+            <i class="fas fa-ambulance"></i>
+        </div>
+
+        
+        <!-- /******************* link ********************************/ -->
+
+        <div class="link">
+            <a href="#">TEST 1</a>
+            <a href="#1">TEST 1</a>
+            <a href="#222">TEST 1</a>
+            <a href="##">TEST 1</a>
+        </div>
+
+        
+        <!-- /******************* list ********************************/ -->
+
+        <div class="list">
+            <ul>
+              <li>This is a List</li>
+              <li>This is a List</li>
+              <li>This is a List</li>
+              <li>This is a List</li>
+            </ul>
+        </div>
+
+
+        <!-- /******************* display ********************************/ -->
+        <div class="display">
+            <p>Punwin Pond 1</p>
+            <p>Punwin Pond 2</p>
+            <p>Punwin Pond 3</p>
+            <p>Punwin Pond 4</p>
+            <p>
+              <div>Win 1</div>
+              <div>Win 2</div>
+            </p>
+            <p>Bright</p>
+        </div>
+
+        <div class="flex">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </div>
+
+
+        <!-- /******************* display flex ***************************/ -->
+        <div class="flex">
+            <div class="flex1">a</div>
+            <div class="flex1">a</div>
+            <div class="flex1">a</div>
+            <div class="flex1">a</div>
+        </div>
+
+        <!-- /******************* Position ***************************/ -->
+        <div class="position">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+
+        <!-- /******************* Overflow ***************************/ -->
+
+        <div class="overflow">
+            <div class="box"></div>
+        </div>
+
+        <!-- /******************* float ***************************/ -->
+        <div class="float">
+            <div class="normal"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+      </body>
+</html>

@@ -1,0 +1,347 @@
+/****************** selector ****************************/
+h1 {
+  color: rgb(100, 194, 38);
+}
+h1 {
+  color: black;
+}
+.import {
+  color: rgb(191, 233, 40) !important;
+}
+#chapt {
+  color: aqua;
+}
+.first h1 {
+  color: aquamarine;
+}
+
+.first > h1 {
+  color: royalblue;
+}
+
+.rgb h1 {
+  color: rgb(12, 12, 123);
+}
+
+.hex h1 {
+  color: #00d15e;
+}
+
+.rgba h1 {
+  color: rgba(12, 150, 100, 0.5);
+  /* color: rosybrown; */
+}
+
+/****************** background ***********************/
+.background_color {
+  background: aliceblue;
+}
+
+  
+/* Create Class name is width400 */
+/* สร้างเป็น class เพื่อไว้ใช้ซ้ำๆ */
+.width400 {
+  width: 400px;
+  height: 400px;
+}
+.width200 {
+  width: 200px;
+  height: 200px;
+}
+.background_image {
+  background-image: url("/image/Narawin.jpg");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*
+  width: 400px;
+  height: 400px;
+  */
+}
+/*******************Border****************************/
+.border {
+  /* border: 5px solid rebeccapurple; */
+  /* border: 5px dotted red; */
+  border: 5px dashed rebeccapurple;
+  /* border: => มันจะ run บรรทัดล่างสุด */
+
+  border-bottom: 5px solid rebeccapurple;
+  border-left: 10px dotted red;
+}
+/******************* Margin ****************************/
+.margin {
+  margin: 50px 100px 100px 100px;
+  background: blueviolet;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+/******************* Padding ****************************/
+.padding {
+  padding: 20px 2px 10px 20px;
+  padding-left: 50px;
+  /* ถ้าอยู่ด้านล่าง จะทับด้านบน */
+  background-color: rgb(231, 31, 31);
+}
+/***************** Width & Height *********************/
+.width-height {
+  width: 300px;
+  height: 400px;
+  background-color: rebeccapurple;
+  width: 50%;
+  /* height เป็นค่าที่ไม่แน่นอนเลยทำเป็น % ไม่ได้ */
+  /* เพราะว่า web มันสามารถเพิ่ม height ไปเรื่อยๆ */
+  /* ให้ใช้ viwe height(vh) */
+  height: 50vh;
+  /* 50vh = 50% of people view */
+  height: 30vw;
+  /* 30vw = 30% of viwe width */
+  width: 200pt;
+  /* เม็ด pixel ในจอแต่ละจอจะไม่เท่ากัน */
+  /* ขนาด pixel ขึ้นอยู่กับจอ */
+  /* BUT! เม็ด point ในจอแต่ละจอจะเท่ากัน */
+  width: 5cm;
+  max-width: 200px;
+  width: 1000px;
+  max-height: 200px;
+  height: 100vh;
+}
+.mix-width {
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+  margin: 50px;
+  border: 10px solid red;
+}
+/******************* outline ****************************/
+.outline {
+  outline: 15px solid rebeccapurple;
+  /* overlap is ทับ space ฝั่งอื่น */
+  /* border : ไม่ทับ Overlap */
+  /* outline : Overlap */
+  outline: 15px dotted rebeccapurple;
+  outline: 15px double rebeccapurple;
+  outline-offset: 15px;
+  /* margin: 30px; */
+  border: 10px solid red;
+}
+
+/******************* text ****************************/
+.text {
+  margin: 100px;
+}
+.text p {
+  text-align: center;
+  /* text-align: justify; */
+  /* justify มันจะขยายเองไปเรื่อยๆเวลาเราพิมพ์ */
+  /* text-decoration: underline; */
+}
+.text .left {
+  text-align: left;
+  text-decoration: underline;
+  text-decoration: overline;
+  text-decoration: line-through;
+  text-decoration-color: yellow;
+}
+.text .right {
+  text-align: right;
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
+.indent {
+  text-indent: 50px;
+  /* letter-spacing = ช่องว่างระหว่างตัวอักษร */
+  letter-spacing: 3px;
+  /* letter-spacing: -1px; */
+  /* line-height: normal|number|length|initial|inherit; */
+  /* The line-height CSS property sets the height of a line box. 
+  It's commonly used to set the distance between lines of text. 
+  On block-level elements, it specifies the minimum height of 
+  line boxes within the element. On non-replaced inline elements,
+   it specifies the height that is used to calculate line box height */
+
+  /* line-height = การตั้งค่าความสูงของบรรทัด */
+  font-size: 18px;
+  line-height: 30px;
+  /* word-spacing = ช่องว่างระหว่างคำ */
+  word-spacing: 20px;
+  text-shadow: 5px 5px 10px palevioletred;
+  /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
+  /* h-shadow = horizontal shadow */
+  /* v-shadow = vertical shadow */
+  /* blur-radius = The blur radius */
+}
+
+/******************* font ********************************/
+.font {
+  margin: 20px;
+  font-size: 20px; /* parent font */
+}
+.font p:first-child {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.html {
+  font-size: 16px;
+}
+
+.font p:nth-child(2) {
+  font-family: "Zen Loop";
+  /* font-weight: 700;  =ตัวหนาหรือใส่คำว่า strong on html */
+  /* font-weight: normal; */
+  font-weight: 700;
+  font-size: 18px;
+  font-size: 3rem;
+  font-size: 3em;
+  /* rem depending on .html{} */
+  /* rem depending on .font{} */
+  /* font-style: italic; */
+  font-style: oblique;
+}
+/******************* icon ********************************/
+.icon i:first-child {
+  color: rebeccapurple;
+  font-size: 100px;
+}
+
+/******************* link ********************************/
+.link a:link {
+  color: blue;
+}
+.link a:visited {
+  color: red;
+}
+.link a:active {
+  color: pink;
+}
+.link a:hover {
+  color: yellowgreen;
+  background-color: black;
+}
+
+/******************* list ********************************/
+.list ul {
+  list-style-type: disc;
+  background-color: blueviolet;
+}
+.list ul li {
+  list-style-position: inside;
+  background-color: paleturquoise;
+  margin: 5px;
+  margin-left: 1px;
+}
+
+/******************* display ********************************/
+.display p:first-child {
+  display: none;
+}
+.display p:nth-child(2) {
+  display: block; /* normal */
+}
+.display p:nth-child(3) {
+  display: inline;
+}
+.display p:nth-child(4) {
+  display: inline;
+}
+.display div {
+  display: inline-block;
+}
+
+.display p:nth-child(6) {
+  display: inline;
+}
+
+/******************* display flex ***************************/
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+/* .flex-item {
+  flex: 1;
+  height: 30px;
+  margin: 5px;
+  background-color: yellowgreen;
+} */
+
+.flex div:first-child {
+  /* flex: 2; */
+  height: 30px;
+  width: 400px;
+  margin: 5px;
+  background-color: yellowgreen;
+}
+
+/******************* Position ***************************/
+.position{
+  /* position: absolute; => ต้องกำหนด parent เป็น relative */
+  position: relative;
+  height: 1000px;
+}
+
+.position div:first-child{
+  position: static; /*Up to Down*/
+}
+.position div:nth-child(2){
+  position: absolute; /*ทับกัน*/
+  top: 200px;
+  left: 200px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.position div:nth-child(3){
+  position: relative; /*similar static but relative can move*/
+  top: 100px;
+  left: 100px;
+}
+
+.position div:nth-child(4){
+  position: fixed; /*fixed still stay*/
+  top: 0px;
+  left: 0px;
+}
+
+.position div:nth-child(5){
+  position: sticky; /**/
+  top: 10px;
+  left: 0px;
+}
+
+/******************* Overflow ***************************/
+.overflow{
+  overflow: auto;
+  /* overflow: scroll; */
+  /* overflow: hidden; */
+  height: 300px;
+}
+.overflow .box{
+  height: 1000px;
+  width: 2000px;
+  background-color: blueviolet;
+}
+
+/******************* float ***************************/
+
+.float .left{
+  float: left;
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+}
+
+.float .right{
+  float: right;
+  background-color: black;
+  width: 100px;
+  height: 100px;
+}
+
+.float .normal{
+  background-color: purple;
+  width: 100px;
+  height: 100px;
+}
